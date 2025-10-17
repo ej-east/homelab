@@ -1,0 +1,18 @@
+# Ignore all files
+*
+
+## Allow base modules
+!ingress/
+!monitoring/
+!.gitignore
+!README.md
+
+### Ingress
+!ingress/monitoring
+!ingress/monitoring/sealed_wildcard_tls_secret.yaml
+!ingress/monitoring/monitoring_ingress.yaml
+
+### Monitoring
+!monitoring/namespace.yaml
+!monitoring/sealed_grafana_user_and_password.yaml
+!monitoring/values.yaml
