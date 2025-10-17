@@ -6,6 +6,7 @@
 !monitoring/
 !.gitignore
 !README.md
+!channel-log.md
 
 ### Ingress
 !ingress/monitoring
