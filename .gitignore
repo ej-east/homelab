@@ -41,3 +41,4 @@
 !argocd/applications/sealed_secrets.yaml
 !argocd/applications/monitoring.yaml
 !argocd/applications/ingress.yaml
+!argocd/applications/ollama.yaml
