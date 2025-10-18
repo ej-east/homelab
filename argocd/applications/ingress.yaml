@@ -5,10 +5,13 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source:
-    repoURL: https://github.com/ej-east/homelab
-    targetRevision: main
-    path: ingress/monitoring
+  sources:
+    - repoURL: https://github.com/ej-east/homelab
+      targetRevision: main
+      path: ingress/monitoring
+    - repoURL: https://github.com/ej-east/homelab
+      targetRevision: main
+      path: ingress/argocd
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
