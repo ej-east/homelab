@@ -17,3 +17,15 @@
 !monitoring/namespace.yaml
 !monitoring/sealed_grafana_user_and_password.yaml
 !monitoring/values.yaml
+
+### Allow ArgoCD
+!argocd/
+
+#### Allow bootstrap file
+!argocd/bootstrap/
+!argocd/bootstrap/root_app.yaml
+
+#### Allow applications files
+!argocd/applications
+
+!argocd/applications/argocd.yaml
