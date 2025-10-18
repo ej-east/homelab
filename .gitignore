@@ -7,6 +7,8 @@
 !.gitignore
 !README.md
 !channel-log.md
+!images
+!images/homelab_infrastructure.png
 
 ### Ingress
 !ingress
