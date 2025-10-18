@@ -31,3 +31,10 @@
 !argocd/applications/argocd.yaml
 !argocd/applications/sealed_secrets.yaml
 !argocd/applications/monitoring.yaml
+
+#### Allow Ingress files
+!argocd/argocd/ingress
+
+### Monitoring ingress
+!argocd/applications/ingress/monitoring-ingress
+!argocd/applications/ingress/monitoring-ingress/monitoring.yaml
