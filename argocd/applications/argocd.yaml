@@ -19,6 +19,11 @@ spec:
       values: |
         server:
           insecure: true
+        configs:
+          params:
+            server.insecure: true
+          global:
+            domain: argocd.local.elijahjohnson.dev
   syncPolicy:
     automated:
       prune: false
