@@ -29,3 +29,4 @@
 !argocd/applications
 
 !argocd/applications/argocd.yaml
+!argocd/applications/sealed_secrets.yaml
