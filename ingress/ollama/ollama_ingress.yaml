@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ollama-ingress
+  namespace: ollama
+  annotations:
+    traefik.ingress.kubernetes.io/router.tls: "true"
+spec:
+  tls:
+  - hosts:
+    - "*.local.elijahjohnson.dev"
+    secretName: wildcard-tls-secret
+  rules:
+  - host: "ollama.local.elijahjohnson.dev"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: open-webui
+            port:
+              number: 80
