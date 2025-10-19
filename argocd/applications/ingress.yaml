@@ -12,9 +12,11 @@ spec:
     - repoURL: https://github.com/ej-east/homelab
       targetRevision: main
       path: ingress/argocd
+    - repoURL: https://github.com/ej-east/homelab
+      targetRevision: main
+      path: ingress/ollama
   destination:
     server: https://kubernetes.default.svc
-    namespace: monitoring
   syncPolicy:
     automated:
       prune: true
